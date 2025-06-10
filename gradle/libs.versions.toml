@@ -11,7 +11,7 @@ skinsrestorer = "15.6.4"
 caffeine = "3.2.0"
 entitylib = "+1f4aeef-SNAPSHOT"
 bstats = "3.1.0"
-
+foliaschedulerwrapper = "0.0.3"
 junit-jupiter = "5.13.0"
 
 [libraries]
@@ -24,7 +24,7 @@ skinsrestorer = { module = "net.skinsrestorer:skinsrestorer-api", version.ref = 
 caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version.ref = "caffeine" }
 entitylib = { module = "me.tofaa.entitylib:spigot", version.ref = "entitylib" }
 bstats = { group = "org.bstats", name = "bstats-bukkit", version.ref = "bstats" }
-
+foliaschedulerwrapper = { module = "com.github.NahuLD.folia-scheduler-wrapper:folia-scheduler-wrapper", version.ref = "foliaschedulerwrapper" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 
 [plugins]

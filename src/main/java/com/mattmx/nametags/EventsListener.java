@@ -2,6 +2,7 @@ package com.mattmx.nametags;
 
 import com.mattmx.nametags.entity.NameTagEntity;
 import com.mattmx.nametags.entity.trait.SneakTrait;
+import io.github.retrooper.packetevents.util.folia.FoliaScheduler;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -23,7 +24,7 @@ public class EventsListener implements Listener {
 
     @EventHandler(ignoreCancelled = true, priority = EventPriority.MONITOR)
     public void onPlayerJoin(@NotNull PlayerJoinEvent event) {
-        Bukkit.getAsyncScheduler().runNow(plugin, (task) -> {
+        FoliaScheduler.getAsyncScheduler().runNow(plugin, (task) -> {
             if (!event.getPlayer().isConnected()) {
                 return;
             }
